@@ -1,0 +1,10 @@
+~ docker exec -it exonepointthree bash
+~ root@0fde7fb0caa7:/usr/src/app# ls
+server  text.log
+~ root@0fde7fb0caa7:/usr/src/app# cat text.log
+2024-12-05 15:14:58 +0000 UTC
+2024-12-05 15:15:00 +0000 UTC
+2024-12-05 15:15:02 +0000 UTC
+2024-12-05 15:15:04 +0000 UTC
+2024-12-05 15:15:06 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
