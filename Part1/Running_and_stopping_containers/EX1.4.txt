@@ -20,3 +20,34 @@ Output:
 <hr><center>nginx/1.24.0</center>
 </body>
 </html>
+
+
+Solution 2 using a Dockerfile:
+
+Dockerfile contains:
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install -y curl
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+
+CMD ["bash"]
+
+CMD 1 - Build the container as per the Dockerfile configuration:
+docker build -t ubuntu .
+
+CMD 2 - Run the container:
+docker run -it ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
+CMD 3 - Testing the container:
+Input website:
+helsinki.fi
+Searching..
+
+Output:
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.24.0</center>
+</body>
+</html>
