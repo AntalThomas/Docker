@@ -1,0 +1,22 @@
+CMD 1 - This starts the container and lets the application run but curl still isn't installed so it won't run:
+docker run -it ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
+CMD 2 - I opened another terminal and Docker Exec into the container so I could add the curl dependancy (bae is the first 3 char of the ContainerID):
+docker exec -it bae bash
+
+CMD 3 - Installing curl onto the container:
+apt install curl
+
+CMD 4 - Testing the container:
+Input website:
+helsinki.fi
+Searching..
+
+Output:
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.24.0</center>
+</body>
+</html>
