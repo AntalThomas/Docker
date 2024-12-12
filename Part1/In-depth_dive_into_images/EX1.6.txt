@@ -1,0 +1,23 @@
+Found image at:
+https://hub.docker.com/r/devopsdockeruh/pull_exercise
+
+Ran image:
+docker run -it devopsdockeruh/pull_exercise
+
+Output:
+Give me the password: 
+
+Opened another terminal to access the container:
+docker exec -it 5e04 sh                        
+/usr/app # ls
+Dockerfile  README.md   index.js
+/usr/app # cat README.md 
+This is the readme, use input "basics" to complete this exercise.
+/usr/app # 
+
+Input the password:
+Give me the password: basics
+
+Output:
+You found the correct password. Secret message is:
+"This is the secret message"
