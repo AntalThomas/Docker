@@ -1,0 +1,19 @@
+Devopsdockeruh ubuntu 83MB
+Devopsdockeruh alpine 15.7MB
+
+CMD 1:
+docker run -d devopsdockeruh/simple-web-service:alpine
+
+CMD 2:
+docker exec -it 608dd sh
+
+CMD 3:
+cat text.log
+
+OUTPUT:
+2024-12-12 03:58:56 +0000 UTC
+2024-12-12 03:58:58 +0000 UTC
+2024-12-12 03:59:00 +0000 UTC
+2024-12-12 03:59:02 +0000 UTC
+2024-12-12 03:59:04 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
