@@ -1,0 +1,7 @@
+Took me a while to realise I needed to have the Dockerfile inside of the source but after that I changed it so it would work without being in the soruce
+
+CMD 1:
+docker build . -t java8 && docker run -p 8080:8080 java8
+
+CHECK BROWSER 127.0.0.1:8080:
+Success
