@@ -1,4 +1,5 @@
-Took me a while to realise I needed to have the Dockerfile inside of the source but after that I changed it so it would work without being in the soruce
+Took me a while to realise I needed to have the Dockerfile inside of the
+source folder but after figuring that out, I changed it so it would work without being in the source folder
 
 CMD 1:
 docker build . -t java8 && docker run -p 8080:8080 java8
