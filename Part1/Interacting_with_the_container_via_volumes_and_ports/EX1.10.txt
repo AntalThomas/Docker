@@ -1,0 +1,11 @@
+CMD 1:
+docker run -p 127.0.0.1:8080:8080 simple-web-service
+
+127.0.0.1:8080 OUTPUT:
+{"message":"You connected to the following path: /","path":"/"}
+
+OUTPUT:
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2024/12/14 - 05:39:50 | 200 |       3.822ms |      172.17.0.1 | GET      "/"
+[GIN] 2024/12/14 - 05:39:50 | 200 |         150µs |      172.17.0.1 | GET      "/favicon.ico"
