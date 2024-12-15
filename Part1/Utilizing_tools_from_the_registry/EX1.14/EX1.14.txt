@@ -1,0 +1,15 @@
+The button wouldn't turn green but there were no errors in the network or console
+
+Changes to frontend:
+ENV REACT_APP_BACKEND_URL=http://localhost:8080
+
+
+Changes to backend:
+ENV REQUEST_ORIGIN=http://localhost:5001
+
+
+CMD 1:
+docker build . --platform linux/amd64 -t backend && docker run -p 8080:8080 backend
+
+CMD 2:
+docker build . -t frontend && docker run -p 5001:5001 frontend
