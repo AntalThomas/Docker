@@ -1,0 +1,9 @@
+Youtube Video Downloader
+
+To Pull:
+$ docker pull ......../...........
+
+How to Use in Terminal:
+$ docker build . -t yt-dld
+
+$ docker run yt-dld https://youtube.com/watch?=EXAMPLE
