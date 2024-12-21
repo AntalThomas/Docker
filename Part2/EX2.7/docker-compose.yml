@@ -6,7 +6,7 @@ services:
       - 8080:8080
     environment:
       - REDIS_HOST=redis
-      - REQUEST_ORIGIN=http://localhost:5001
+      - REQUEST_ORIGIN=http://localhost:5001/
       - POSTGRES_HOST=db
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DATABASE=postgres
@@ -21,7 +21,7 @@ services:
     ports:
       - 5001:5001
     environment:
-      - REACT_APP_BACKEND_URL=http://localhost:8080
+      - REACT_APP_BACKEND_URL=http://localhost:8080/
     depends_on: 
       - backend
 
@@ -41,5 +41,3 @@ services:
       - POSTGRES_DATABASE=postgres
     volumes:
       - ./database:/var/lib/postgresql/data
-
-    
