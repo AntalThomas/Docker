@@ -28,7 +28,7 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DATABASE=postgres
     volumes:
-      - ./database:/var/lib/postgresql/data
+      - ./database/:/var/lib/postgresql/data
 
   nginx:
     image: nginx
@@ -36,6 +36,3 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf
     ports:
       - 80:80
-
-
-# tried to remove as many lines as I could and still get the app to work

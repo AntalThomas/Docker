@@ -1,0 +1,2 @@
+CMD 1:
+docker run -it --rm --network host networkstatic/nmap -sT localhost
