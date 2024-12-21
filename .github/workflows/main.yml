@@ -29,4 +29,4 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: AntalThomas/DevOps_With_Docker
+        tags: antalthomas/devops_with_docker
