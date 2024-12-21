@@ -1,0 +1,5 @@
+CMD 1:
+docker build . -t example-frontend
+
+CMD 2:
+docker run -p 5001:5001 example-frontend
