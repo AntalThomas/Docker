@@ -1,0 +1,6 @@
+name: DevOps with Docker Part 3
+
+on:
+  push:
+    branches:
+      - main
